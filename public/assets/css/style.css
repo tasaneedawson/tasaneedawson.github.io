@@ -3,6 +3,9 @@ body {
   color: #37b4a8;
   font-family: 'Montserrat', sans-serif;
   margin: 10px 0 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
 }
 .top-nav li {
   display: block;
@@ -11,6 +14,25 @@ body {
 .logo {
   width: 15%;
 }
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top-div {
+  display: flex;
+}
+.top-nav li {
+  display: block;
+  justify-content: space-between;
+}
+.logo {
+  width: 15%;
+}
+.logo-top {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -151,8 +173,12 @@ input[type=submit]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     margin: 10px 0;
   }
+  .logo-top {
+    text-align: left;
+}
   .top-nav ul {
     display: flex;
     justify-content: space-between;

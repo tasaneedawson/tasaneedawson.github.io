@@ -1,0 +1,22 @@
+{
+  "name": "tasaneedawson.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tasaneedawson/tasaneedawson.github.io.git"
+  },
+  "author": "tasanee dawson",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/tasaneedawson/tasaneedawson.github.io/issues"
+  },
+  "homepage": "https://github.com/tasaneedawson/tasaneedawson.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
