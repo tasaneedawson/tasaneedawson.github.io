@@ -1,0 +1,185 @@
+body {
+  background-color: #FFFCFC;
+  color: #37b4a8;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 0 0;
+}
+.top-nav li {
+  display: block;
+  /* justify-content: space-between; */
+}
+.logo {
+  width: 15%;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+ul a {
+  color: #37b4a8;
+  text-decoration: none;
+  letter-spacing: .2em;
+  font-size: clamp(0.6rem, 1.5vw, 1.5vw);
+}
+.top-nav a.current {
+  font-weight: bold;
+}
+
+.main-nav {
+  display: none;
+}
+.tasanee {
+  margin-bottom: 20px;
+}
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size : clamp(2rem, 10vw, 10vw);
+  color: #37b4a8;
+  /* -webkit-text-stroke: 1px #F9C750; */
+}
+h4 {
+  color: #37b4a8;
+
+}
+h5 {
+  color: #37b4a8;
+  font-size: 0.8rem;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+p {
+  padding-top: 30px;
+  color: #595A5C;
+}
+.video-mograph {
+  margin: 10px;
+}
+
+/* Contact */
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  /* border-radius: 5px; */
+  background-color: #eceeed;
+  color: #E6E7E8;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  /* padding: 20px; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.coffee {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+.menusocial {
+	text-align: center;
+  margin-bottom: 50px;
+}
+.menusocial li {
+    list-style: none;
+    display: inline-block;
+}
+.menusocial a {
+	border-bottom: none;
+}
+.splide {
+  margin: 50px 0;
+}
+.glightbox-clean .gslide-title {
+  color: #37b4a8 !important;
+}
+
+.glightbox-clean .gslide-desc {
+  color: #595A5C;
+}
+.glightbox-clean .gclose path, .glightbox-clean .gnext path, .glightbox-clean .gprev path {
+  fill: #37b4a8 !important;
+  width: 2.5em;
+  height: 2.5em;
+  transition: fill .2s linear;
+}
+.grid { 
+  margin-bottom: 50px;
+}
+.splide {
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 567px) {
+  body {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .top-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  h5 {
+    font-size: 1.2rem;
+    line-height: 180%;
+  }
+  
+  ul a {
+    margin: auto 20px;
+  }
+  main {
+    margin-top: 50px;
+  }
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .container {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  .grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 30px;
+    align-items: stretch;
+  }
+}
