@@ -61,7 +61,6 @@ h1 {
 }
 h4 {
   color: #37b4a8;
-
 }
 h5 {
   color: #37b4a8;
@@ -70,8 +69,8 @@ h5 {
   margin-bottom: 20px;
 }
 p {
-  padding-top: 30px;
-  color: #595A5C;
+  padding-top: 15px;
+  color: #26867d;
 }
 .video-mograph {
   margin: 10px;
