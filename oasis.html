@@ -18,6 +18,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
 
 	</head>
 	<body>
@@ -51,15 +53,27 @@
         </div>
       </div>
 
-      <a href="oasis.html" class="glightbox" data-gallery="gallery1" data-glightbox="title:Music Magazine Layout [InDesign, Photoshop, Illustrator]" target="_top"><img class="design" src="/public/assets/images/oasis2.jpg" />
-      </a>
+      <div class="mograph column grid">
+
+        <a href="/public/assets/images/oasis2.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="title:Music Magazine Layout [InDesign, Photoshop, Illustrator]" target="_top"><img src="/public/assets/images/oasis2.jpg" />
+        </a>
+
+        <!-- <div id="flipbook">
+          <div class="hard"> Turn.js </div>
+          <div class="hard"></div>
+          <div> <img src="/public/assets/images/Oasis.jpg" alt=""> </div>
+          <div> <img src="/public/assets/images/oasis2.jpg" alt=""> </div>
+          <div> <img src="/public/assets/images/oasis3.jpg" alt=""> </div>
+          <div class="hard"></div>
+          <div class="hard"></div>
+        </div> -->
 
 
-      <!-- <img class="design" src="/public/assets/images/Oasis.jpg" />
-      <img class="design" src="/public/assets/images/Oasis2.jpg" />
-      <img class="design" src="/public/assets/images/Oasis3.jpg" />
- -->
-
+        <!-- <img class="design" src="/public/assets/images/Oasis.jpg" />
+        <img class="design" src="/public/assets/images/Oasis2.jpg" />
+        <img class="design" src="/public/assets/images/Oasis3.jpg" />
+  -->
+      </div>
     </main>
 
 
@@ -85,6 +99,14 @@
         }).mount();
       } );
     </script>
+
+    <!-- <script type="text/javascript">
+      $("#flipbook").turn({
+        width: 1352,
+        height: 760,
+        autoCenter: true
+      });
+    </script> -->
 
 	</body>
 </html>
