@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Tasanee Dawson</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="/public/assets/css/genericons.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+	</head>
+	<body>
+    <header>
+
+      <div class="logo-top">
+        <a href="/"><img class="logo" src="public/assets/images/logo2.png" alt="My logo" /></a>
+      </div>
+
+      <div>
+        <nav class="top-nav">
+          <ul>
+            <li><a href="/" class="current">ABOUT</a></li>
+            <li><a href="/work.html">WORK</a></li>
+            <!-- <li><a href="/contact.html">CONTACT</a></li> -->
+          </ul>
+        </nav>
+      </div>
+      
+
+    </header>
+
+    <main id="main-container">
+
+      <div class="intro">
+        <div class="tasanee">
+          <h1>e-Cycle</h1>
+          <h5>UX Case Study</h5>
+          <h5>
+            eCycle is an application that gives you access to an electronic bike sharing service which is located in various Canadian cities. This app simplifies the process of quickly finding bicycles to ride around your city, utilizing a  friendly and easy to use system.
+          </h5>
+        </div>
+      </div>
+
+
+      <div id="app">
+        <flipbook class="flipbook" :pages="pages" v-slot="flipbook" :clickToZoom="false" :zooms="null">
+            <button class="arrow left" @click="flipbook.flipLeft"></button>
+            <button class="arrow right" @click="flipbook.flipRight"></button>
+        </flipbook>          
+      </div>
+    </main>
+
+
+    <footer role="contentinfo">
+      <div class="site site-main">
+        <div class="menusocial secondary">
+          <ul>
+            <li><a href="https://linkedin.com/in/tasanee-dawson/" target="_blank"><span class="text"></span></a></li>
+            <li><a href="https://instagram.com/tasanee_dawson" target="_blank"><span class="text"></span></a></li>
+            <li><a href="https://github.com/tasaneedawson" target="_blank"><span class="text"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>	
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide', {
+        	type: 'loop',
+          heightRatio: 0.5625
+        }).mount();
+      } );
+    </script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="https://unpkg.com/flipbook-vue@0.10.4/dist/flipbook.min.js"></script>
+
+    <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          pages: [
+              '/public/assets/images/ecyclebook001.png',
+              '/public/assets/images/ecyclebook002.png',
+              '/public/assets/images/ecyclebook003.png',
+              '/public/assets/images/ecyclebook004.png',
+              '/public/assets/images/ecyclebook005.png',
+              '/public/assets/images/ecyclebook006.png',
+              '/public/assets/images/ecyclebook007.png',
+              '/public/assets/images/ecyclebook008.png',
+              '/public/assets/images/ecyclebook009.png',
+              '/public/assets/images/ecyclebook010.png',
+              '/public/assets/images/ecyclebook011.png',
+              '/public/assets/images/ecyclebook012.png',
+              '/public/assets/images/ecyclebook013.png',
+              '/public/assets/images/ecyclebook014.png',
+              '/public/assets/images/ecyclebook015.png',
+              '/public/assets/images/ecyclebook016.png',
+
+               ]
+        }
+      }
+    });
+  </script>
+
+	</body>
+</html>

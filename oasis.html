@@ -38,6 +38,7 @@
           </ul>
         </nav>
       </div>
+      
 
     </header>
 
@@ -49,30 +50,15 @@
           <h5>
             The purpose of this work was to create and design also presented it in a music magazine of my favorite band or artist
           </h5>
-    
         </div>
       </div>
 
-      <div class="mograph column grid">
 
-        <a href="/public/assets/images/oasis2.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="title:Music Magazine Layout [InDesign, Photoshop, Illustrator]" target="_top"><img src="/public/assets/images/oasis2.jpg" />
-        </a>
-
-        <!-- <div id="flipbook">
-          <div class="hard"> Turn.js </div>
-          <div class="hard"></div>
-          <div> <img src="/public/assets/images/Oasis.jpg" alt=""> </div>
-          <div> <img src="/public/assets/images/oasis2.jpg" alt=""> </div>
-          <div> <img src="/public/assets/images/oasis3.jpg" alt=""> </div>
-          <div class="hard"></div>
-          <div class="hard"></div>
-        </div> -->
-
-
-        <!-- <img class="design" src="/public/assets/images/Oasis.jpg" />
-        <img class="design" src="/public/assets/images/Oasis2.jpg" />
-        <img class="design" src="/public/assets/images/Oasis3.jpg" />
-  -->
+      <div id="app">
+        <flipbook class="flipbook" :pages="pages" v-slot="flipbook" :clickToZoom="false" :zooms="null">
+            <button class="arrow left" @click="flipbook.flipLeft"></button>
+            <button class="arrow right" @click="flipbook.flipRight"></button>
+        </flipbook>          
       </div>
     </main>
 
@@ -89,7 +75,7 @@
       </div>
     </footer>	
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     
     <script>
       document.addEventListener( 'DOMContentLoaded', function () {
@@ -98,15 +84,29 @@
           heightRatio: 0.5625
         }).mount();
       } );
-    </script>
-
-    <!-- <script type="text/javascript">
-      $("#flipbook").turn({
-        width: 1352,
-        height: 760,
-        autoCenter: true
-      });
     </script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="https://unpkg.com/flipbook-vue@0.10.4/dist/flipbook.min.js"></script>
+
+    <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+          pages: [
+              '/public/assets/images/oasis006.jpg',
+               '/public/assets/images/oasis001.jpg',
+               '/public/assets/images/oasis002.jpg',
+               '/public/assets/images/oasis003.jpg',
+               '/public/assets/images/oasis004.jpg',
+               '/public/assets/images/oasis005.jpg'
+               ]
+        }
+      }
+    });
+  </script>
 
 	</body>
 </html>

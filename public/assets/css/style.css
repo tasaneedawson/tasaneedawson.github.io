@@ -5,8 +5,8 @@ body {
   margin: 10px 0 0;
   padding-left: 5vw;
   padding-right: 5vw;
-
 }
+
 .top-nav li {
   display: block;
   /* justify-content: space-between; */
@@ -41,20 +41,19 @@ hr{
 img {
   max-width: 100%;
   width: 100%;
-  opacity: 0.85;
-}
-img:hover {
-  /* -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
-  transition-delay: 0.5s ease; */
   opacity: 1;
 }
+/* img:hover {
+  opacity: 0.85;
+} */
+
+
 .about-me {
   display: flex;
   align-items: center;
   padding: 5vw 0;
 }
+
 .goi-img {
   width: 20%;
   border-radius: 50%;
@@ -96,9 +95,17 @@ h5 {
   line-height: 150%;
   margin-bottom: 20px;
 }
+a {
+  color: #37b4a8;
+  font-size: 1em;
+  /* font-weight: 600; */
+  margin-bottom: 19px;
+  line-height: 1.4em;
+}
 p {
   padding-top: 15px;
   color: #26867d;
+  line-height: 1.6em;
 }
 .video-mograph {
   margin: 10px;
@@ -196,6 +203,57 @@ footer {
 
 
 
+/* responsive-site */
+
+.responsive-bg {
+  background-image: url(../images/responsive-bg.jpg);
+}
+.responsive-img {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 45px;
+  align-items: center;
+}
+.responsive-desktop,
+.responsive-mobile {
+  filter: drop-shadow(0 0 0.75rem rgb(147, 162, 163));
+}
+.responsive-img {
+  margin: 50px 0;
+}
+.back a {
+  font-size: 16px;
+  color: #37b4a8;
+  padding-left: 90%;
+  text-decoration: none;
+  padding-bottom: 50px;
+}
+.flipbook {
+  width: 100%;
+  height: 35vh;
+  margin: 40px 0;
+  filter: drop-shadow(0 0 0.75rem rgb(226, 226, 226));
+
+}
+.arrow {
+  border: solid rgb(141, 141, 141);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+
+
+
+
 @media screen and (min-width: 567px) {
   body {
     padding-left: 15vw;
@@ -240,4 +298,11 @@ footer {
     grid-gap: 30px;
     align-items: stretch;
   }
+  .back a:hover {
+		font-weight: 600;
+	}
+  .flipbook {
+    height: 65vh;
+  }
+  
 }

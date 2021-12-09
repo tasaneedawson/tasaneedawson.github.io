@@ -18,5 +18,8 @@
   "homepage": "https://github.com/tasaneedawson/tasaneedawson.github.io#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "flipbook-vue": "^0.10.4"
   }
 }
