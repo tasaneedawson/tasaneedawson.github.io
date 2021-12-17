@@ -1,7 +1,7 @@
 body {
   background-color: #f0f0f0;
   color: #37b4a8;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 10px 0 0;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -20,7 +20,7 @@ header {
   flex-direction: column;
   margin-bottom: 20px;
 }
-hr{
+hr {
   height: 1px;
   background-color: #ccc;
   border: none;
@@ -34,6 +34,7 @@ hr{
 }
 .logo {
   width: 15%;
+  filter: drop-shadow(0.1rem 0.6rem 0.75rem rgb(207, 207, 207));
 }
 .logo-top {
   text-align: center;
@@ -46,7 +47,9 @@ img {
 /* img:hover {
   opacity: 0.85;
 } */
-
+.img-deco {
+  filter: drop-shadow(0.1rem 0.6rem 0.75rem rgb(207, 207, 207));
+}
 
 .about-me {
   display: flex;
@@ -67,7 +70,7 @@ img {
 ul a {
   color: #37b4a8;
   text-decoration: none;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   font-size: clamp(0.6rem, 1.5vw, 1.5vw);
 }
 .top-nav a.current {
@@ -81,10 +84,11 @@ ul a {
   margin-bottom: 20px;
 }
 h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size : clamp(2rem, 10vw, 10vw);
+  font-family: "Bebas Neue", cursive;
+  font-size: clamp(2rem, 10vw, 10vw);
   color: #37b4a8;
   /* -webkit-text-stroke: 1px #F9C750; */
+  filter: drop-shadow(0.1rem 0.6rem 0.75rem rgb(207, 207, 207));
 }
 h4 {
   color: #37b4a8;
@@ -99,7 +103,7 @@ a {
   color: #37b4a8;
   font-size: 1em;
   /* font-weight: 600; */
-  margin-bottom: 19px;
+  /* margin-bottom: 19px; */
   line-height: 1.4em;
 }
 p {
@@ -117,7 +121,9 @@ p {
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -126,15 +132,15 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -142,7 +148,7 @@ input[type=submit]:hover {
 .container {
   /* border-radius: 5px; */
   background-color: #eceeed;
-  color: #E6E7E8;
+  color: #e6e7e8;
   padding: 10px;
 }
 
@@ -165,15 +171,15 @@ input[type=submit]:hover {
   margin: 20px 0;
 }
 .menusocial {
-	text-align: center;
+  text-align: center;
   margin-bottom: 50px;
 }
 .menusocial li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 .menusocial a {
-	border-bottom: none;
+  border-bottom: none;
 }
 .splide {
   margin: 50px 0;
@@ -183,15 +189,17 @@ input[type=submit]:hover {
 }
 
 .glightbox-clean .gslide-desc {
-  color: #595A5C;
+  color: #595a5c;
 }
-.glightbox-clean .gclose path, .glightbox-clean .gnext path, .glightbox-clean .gprev path {
+.glightbox-clean .gclose path,
+.glightbox-clean .gnext path,
+.glightbox-clean .gprev path {
   fill: #37b4a8 !important;
   width: 2.5em;
   height: 2.5em;
-  transition: fill .2s linear;
+  transition: fill 0.2s linear;
 }
-.grid { 
+.grid {
   margin-bottom: 50px;
 }
 .splide {
@@ -200,8 +208,6 @@ input[type=submit]:hover {
 footer {
   padding-top: 20px;
 }
-
-
 
 /* responsive-site */
 
@@ -233,7 +239,6 @@ footer {
   height: 35vh;
   margin: 40px 0;
   filter: drop-shadow(0 0 0.75rem rgb(226, 226, 226));
-
 }
 .arrow {
   border: solid rgb(141, 141, 141);
@@ -250,10 +255,6 @@ footer {
   -webkit-transform: rotate(135deg);
 }
 
-
-
-
-
 @media screen and (min-width: 567px) {
   body {
     padding-left: 15vw;
@@ -268,7 +269,7 @@ footer {
   }
   .logo-top {
     text-align: left;
-}
+  }
   .top-nav ul {
     display: flex;
     justify-content: space-between;
@@ -277,14 +278,15 @@ footer {
     font-size: 1.2rem;
     line-height: 180%;
   }
-  
+
   ul a {
     margin: auto 0 auto 20px;
   }
   main {
     margin-top: 50px;
   }
-  .column, input[type=submit] {
+  .column,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
@@ -292,17 +294,16 @@ footer {
     margin-left: 75px;
     margin-right: 75px;
   }
-  .grid { 
+  .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 30px;
     align-items: stretch;
   }
   .back a:hover {
-		font-weight: 600;
-	}
+    font-weight: 600;
+  }
   .flipbook {
     height: 65vh;
   }
-  
 }
