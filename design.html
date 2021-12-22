@@ -60,7 +60,7 @@
         <nav class="top-nav">
           <ul>
             <li><a href="/">ABOUT</a></li>
-            <li><a href="/work.html">WORK</a></li>
+            <li><a href="/work.html" class="current">WORK</a></li>
             <!-- <li><a href="/contact.html">CONTACT</a></li> -->
           </ul>
         </nav>
@@ -73,73 +73,87 @@
         InDesign, Photoshop, Illustrator, Autodesk 3ds Max, Adobe Lightroom
       </h5>
 
-      <div class="design column grid">
-        <!-- <a href="/public/assets/images/Oasis.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="title:Music Magazine Layout [InDesign, Photoshop, Illustrator]" target="_top"><img class="design" src="/public/assets/images/Oasis.jpg" /></a> -->
-
-        <!-- <a href="/public/assets/images/Oasis.jpg" class="glightbox" data-gallery="gallery1" data-glightbox='title:Music Magazine Layout [InDesign, Photoshop, Illustrator]; description: &lt;a href="oasis.html"&gt;more detail...&lt;/a&gt;'><img class="design" src="/public/assets/images/Oasis.jpg" /></a> -->
-
-        <a
-          href="/public/assets/images/Oasis.jpg"
-          class="glightbox"
-          data-gallery="gallery1"
-          data-glightbox='title:Music Magazine Layout [InDesign, Photoshop, Illustrator]; description: &lt;a href="https://flowpaper.com/app/flowpaper-reflow-build/index.html?path=/Workspace/Music_Spread/index.html?reload=1637091265160#page=1"&gt;more detail...&lt;/a&gt;'
-          ><img class="design img-deco" src="/public/assets/images/Oasis.jpg"
-        /></a>
-
-        <!-- <a href="/public/assets/images/3dA.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="title:Breakfast Scene Part I, Models and Wireframes [Autodesk 3D Max]"><img class="design" src="/public/assets/images/3dA.jpg" /></a> -->
-
-        <a
-          href="/public/assets/images/BreakfastScene.jpg"
-          class="glightbox"
-          data-gallery="gallery1"
-          data-glightbox="title:Breakfast Scene, Full Scene Render [Autodesk 3ds Max]"
-        >
+      <div class="design column grid project-container">
+        <div class="project-card">
           <img
-            class="design img-deco"
+            class="project-img design img-deco"
+            src="/public/assets/images/Oasis.jpg"
+          />
+          <div class="project-content">
+            <h2 class="project-title">OASIS</h2>
+            <h4 class="project-info">Music Magazine Design</h4>
+            <button class="project-btn">
+              <a href="oasis.html">See more</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            class="project-img design img-deco"
             src="/public/assets/images/BreakfastScene.jpg"
           />
-        </a>
+          <div class="project-content">
+            <h2 class="project-title">Breakfast SCN</h2>
+            <h4 class="project-info">
+              Autodesk 3ds Max - Modeling & Texturing
+            </h4>
+            <button class="project-btn">
+              <a href="breakfast-scene.html">See more</a>
+            </button>
+          </div>
+        </div>
 
-        <!-- <a href="/public/assets/images/Duck - 3DMax.jpg" class="glightbox" data-gallery="gallery1" data-glightbox="title:Rubber Duck 3D Modeling [Autodesk 3D Max]"><img class="design" src="/public/assets/images/Duck - 3DMax.jpg" /></a> -->
+        <div class="project-card">
+          <img
+            class="project-img design img-deco"
+            src="/public/assets/images/PSA-cut.jpg"
+          />
+          <div class="project-content">
+            <h2 class="project-title">2nd-hand Smoke</h2>
+            <h4 class="project-info">Public Service Announcement Poster</h4>
+            <button class="project-btn">
+              <a href="second-hand-smoke.html">See more</a>
+            </button>
+          </div>
+        </div>
 
-        <a
-          href="/public/assets/images/PSA.jpg"
-          class="glightbox"
-          data-gallery="gallery1"
-          ><img class="design img-deco" src="/public/assets/images/PSA.jpg"
-        /></a>
-
-        <a
-          href="/public/assets/images/deer.png"
-          class="glightbox"
-          data-gallery="gallery1"
-          data-glightbox="title:Photoshop Photo Manipulation"
-          ><img class="design img-deco" src="/public/assets/images/deer.png"
-        /></a>
+        <div class="project-card">
+          <img
+            class="project-img design img-deco"
+            src="/public/assets/images/deer.png"
+          />
+          <div class="project-content">
+            <h2 class="project-title">My Deerest</h2>
+            <h4 class="project-info">Photoshop Manipulation Creative</h4>
+            <button class="project-btn">
+              <a href="image-manipulation.html">See more</a>
+            </button>
+          </div>
+        </div>
       </div>
     </main>
 
     <footer role="contentinfo">
-      <div class="site site-main">
-        <div class="menusocial secondary">
-          <ul>
-            <li>
-              <a href="https://linkedin.com/in/tasanee-dawson/" target="_blank"
-                ><span class="text"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://instagram.com/tasanee_dawson" target="_blank"
-                ><span class="text"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/tasaneedawson" target="_blank"
-                ><span class="text"></span
-              ></a>
-            </li>
-          </ul>
-        </div>
+      <div class="site site-main"></div>
+      <div class="menusocial secondary">
+        <ul class="footer-design">
+          <li>
+            <a href="https://linkedin.com/in/tasanee-dawson/" target="_blank"
+              ><span class="text"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/tasanee_dawson" target="_blank"
+              ><span class="text"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/tasaneedawson" target="_blank"
+              ><span class="text"></span
+            ></a>
+          </li>
+        </ul>
       </div>
     </footer>
 
