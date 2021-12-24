@@ -208,6 +208,9 @@ footer {
 .responsive-img img {
   margin: 15px 0;
 }
+.sections-img {
+  margin-bottom: 20px;
+}
 .back a {
   font-size: 16px;
   color: #37b4a8;
@@ -434,5 +437,8 @@ span {
   .back-button:hover {
     font-weight: bold;
     color: #20b2aa;
+  }
+  .sections-img {
+    margin-bottom: 0;
   }
 }
