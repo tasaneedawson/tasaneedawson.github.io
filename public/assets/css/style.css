@@ -200,18 +200,13 @@ footer {
 /* .responsive-bg {
   background-image: url(../images/responsive-bg.jpg);
 } */
-.responsive-img {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 45px;
-  align-items: center;
-}
+
 .responsive-desktop,
 .responsive-mobile {
   filter: drop-shadow(0 0 0.75rem rgb(147, 162, 163));
 }
-.responsive-img {
-  margin: 50px 0;
+.responsive-img img {
+  margin: 15px 0;
 }
 .back a {
   font-size: 16px;
@@ -381,9 +376,15 @@ span {
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     align-items: stretch;
+  }
+  .responsive-img {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
   }
   .back a:hover {
     font-weight: 600;
