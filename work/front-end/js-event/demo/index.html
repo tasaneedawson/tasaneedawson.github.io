@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>DuckDuckGo Apartment</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- top part of the site: logo and nav -->
+		<header>
+			<div class="top-site">
+				<img class="logo" src="images/logo.png" width="250" alt="DuckDuckGo Apartment" />
+				<nav>
+					<ul>
+						<li><a href="house">Home</a></li> 
+						<li><a href="apartment">About Us</a></li>
+						<li><a href="faq">FAQ</a></li>
+						<li><a href="blog">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>	
+		<!-- main: include the container to set text and form absolute to main container -->
+		<main>
+			<div class="container">
+				<div class="main-img">
+					<img src="images/apmt.jpg" width="1800" alt="Main image" />
+				</div>
+				<div class="top-text">
+					<h1>Popular Area</h1>
+					<h2>Find your next apartment that suit your style.</h2>
+				</div>
+				<div class="register-form">
+				<form action="#" method="post">
+				  <fieldset>
+					<legend>Application Form</legend>
+					<hr />
+					<div class="top-input">
+					  <label for="reg-name">Applicant Name *</label>
+					  <input name="reg-name" id="reg-name" type="text" required />
+					  <label for="tel">Applicant Phone *</label>
+					  <input type="tel" id="tel" name="phonenumber" required />
+					  <label for="email">Applicant Email *</label>
+					  <input type="email" id="email" name="emailaddress" required />
+					  <label for="current-employer">Current Employer</label>
+					  <input type="text" name="employer" id="current-employer" />
+					</div>
+					<div class="salary">
+						<legend>Salary</legend>
+						<input type="radio" name="salary" id="twenty-k" value="20k">
+						<label for="twenty-k"><$20k</label><br />
+						<input type="radio" name="salary" id="twenty-more" value="20k-50k">
+						<label for="twenty-more">$20k - $50k</label><br />
+						<input type="radio" name="salary" id="fifty-k" value="50k">
+						<label for="fifty-k">$50k+</label><br />
+					</div>
+					<div class="interested">
+						<legend>Interested in</legend>
+						<div>
+							<input type="checkbox" name="room" id="studio" >
+							<label for="studio"><img src="images/studio.png" width="100" alt="Studio Room"></label>
+						</div>
+						<div>
+							<input type="checkbox" name="room" id="onebedroom">
+							<label for="onebedroom"><img src="images/1bedroom.png" width="100" alt="One Bedroom"></label>
+						</div>
+						<div>
+							<input type="checkbox" name="room" id="twobedroom">
+							<label for="twobedroom"><img src="images/2bedroom.png" width="100" alt="Two Bedroom"></label>
+						</div>
+					</div>
+					<div class="button">
+					  <input type="submit" class="submit" />
+					</div>                                  
+				  </fieldset>
+				</form>
+			  	</div>
+			</div>
+		</main>	
+		<!-- footer always fixed to the bottom -->
+		<footer>
+			<div class="site-info content-area"> 
+				<p>&copy;2020 <a href="#" title="rentseeker">DuckDuckGo Apartment.</a> All rights reserved.</p>
+			</div>
+		</footer>
+		<!-- 2 JavaScript files put before closing body tag -->
+		<script src="js/label-highlight.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

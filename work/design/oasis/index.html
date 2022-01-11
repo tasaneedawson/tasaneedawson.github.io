@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tasanee Dawson</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/assets/css/splide-sea-green.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/genericons.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/assets/images/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-top">
+        <a href="/"></a>
+          <img
+            class="logo"
+            src="/public/assets/images/logo2.png"
+            alt="My logo"
+          />
+        </a>
+      </div>
+
+      <div>
+        <nav class="top-nav">
+          <ul>
+            <li><a href="/">ABOUT</a></li>
+            <li><a href="/work/" class="current">WORK</a></li>
+            <!-- <li><a href="/contact.html">CONTACT</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <div class="intro">
+        <div class="tasanee">
+          <h1>OASIS Feature</h1>
+          <div class="sub-back-btn">
+            <h3>Magazine Feature Article Design</h3>
+            <a class="back-button" href="/work/design/">
+              <img
+                class="back-cheron"
+                src="/public/assets/images/chevron-left-solid.svg"
+                alt="chevron-left-solid"
+              />
+              Back
+            </a>
+          </div>
+          <hr />
+
+          <p>
+            <span>Tools:</span>
+            Adobe InDesign, Photoshop
+          </p>
+          <h5>
+            A multi-page music magazine feature article design about the band OASIS, including text and photos.
+          </h5>
+        </div>
+      </div>
+
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="/public/assets/images/oasis01.png" />
+            </li>
+            <li class="splide__slide">
+              <img src="/public/assets/images/oasis02.png" />
+            </li>
+            <li class="splide__slide">
+              <img src="/public/assets/images/oasis03.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="site site-main">
+        <div class="menusocial secondary">
+          <ul>
+            <li>
+              <a href="https://linkedin.com/in/tasanee-dawson/" target="_blank">
+                <span class="text"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/tasanee_dawson" target="_blank">
+                <span class="text"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tasaneedawson" target="_blank">
+                <span class="text"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          type: "loop",
+          heightRatio: 0.5625,
+        }).mount();
+      });
+    </script>
+
+  </body>
+</html>

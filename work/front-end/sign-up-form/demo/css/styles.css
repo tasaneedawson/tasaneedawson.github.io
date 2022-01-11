@@ -1,0 +1,140 @@
+/* start with * to select a whole page */
+* {
+    box-sizing: border-box;
+}
+body { 
+    background-color: #cce3de;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    max-width: 100%;
+    font-size: 16px;
+    color: #264653;
+    font-family: 'Nunito', sans-serif; 
+    font-weight: 400;
+    line-height: 29px;
+    min-width: 920px;
+}
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+}
+legend {
+    font-size: 20px;
+    text-align: center;
+}
+hr {
+    color: #5e6472;
+    border-style: solid;
+    border-bottom: none;
+}
+header {
+    margin: 20px 0;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+/* use flex here */
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    gap: 20px;
+    padding-bottom: 70px;
+}
+#main-img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1px 0 #5e6472;
+}
+/* position image and text */
+.container {
+    width: 70%;
+    position: relative;
+}
+.text-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 0 0 20px;
+    width: 40%;
+    font-size: 16px;
+    line-height: 130%;
+    color: #5e6472;
+    text-shadow: 1px 1px 2px #f1f1f1;
+    background-color: rgba(255,255,255,0.75);
+    padding: 20px;
+    border-radius: 5px;
+}
+.sign-up-form {
+    display: block;
+    width: 50%;
+    background-color: #cce3de;
+    box-shadow: 0 0 1px 0 #5e6472;
+    padding: 45px 60px;
+}
+.submit {
+    margin: 5px auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: hidden;
+    color: #264653;
+    font-size: 16px;
+    cursor: pointer;
+}
+input {
+    margin-bottom: 10px;
+    color: #5e6472;
+}
+/* specific to style input */
+input[type=email], input[type=password], input[name=fname], input[name=lname] {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #3a86ff;
+    margin-top: 20px;
+}
+#province {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background: #f1f1f1;
+    width: 100%;
+}
+.address option {
+    color: #5e6472;
+    font-family: 'Nunito', sans-serif; 
+}
+.bottom {
+    margin-bottom: 10px;
+}
+/* always fixed at the bottom */
+footer {
+    background-color: #02c39a;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+}
+footer a {
+    text-decoration: none;
+    color: #3a86ff;
+} 
+a:hover {
+    color: #2d00f7;
+}

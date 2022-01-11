@@ -1,0 +1,127 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Nunito', sans-serif; 
+    color: #5e6472;
+}
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+h2 {
+    color: #f1f1f1; 
+    font-size: 20px;
+}
+p {
+    font-size: 18px;
+}
+legend {
+    font-size: 20px;
+    text-align: center;
+    text-align: left;
+    margin: 10px 0;
+}
+hr {
+    color: #5e6472;
+    border-style: solid;
+    border-bottom: none;
+} 
+li {
+    float: left;
+}
+li a {
+    color: #5e6472;
+    display: block;
+    margin: 50px auto 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+li a:hover {
+    color: #3a86ff;
+  }
+.logo {
+    margin: 20px 50px;
+}
+.top-site {
+    display: flex;
+    justify-content: start;
+}
+/* set container to position: relative then the absolute elements will be top-text and form */
+.container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+.main-img {
+    padding: 0 50px;
+}
+.main-img img {
+    width: 100%;
+    height: auto;
+}
+.top-text {
+    position: absolute;
+    margin: 30px 30px;
+    left: 130px;
+    top: 60px;
+}
+.register-form {
+    display: inline-block;
+    width: 26%;
+    background-color: #cce3de;
+    box-shadow: 0 0 1px 0 #5e6472;
+    padding: 30px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+}
+/* to specify the style of fill areas */
+input[name=reg-name], input[type=tel], input[type=email], input[name=employer] {
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.salary {
+    display: inline-block;
+}
+.interested div {
+    display: inline-block;
+    justify-content: space-between;
+    margin: auto 0;
+}
+.submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: 1px solid #5e6472;
+    color: #264653;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer {
+    background-color: #73eed3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #5e6472;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: #5e6472;
+} 
+a:hover {
+    color: #3a86ff;
+}

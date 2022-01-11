@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>SewingDuckDuck</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+    <!-- site logo and name -->
+    <header>
+      <img class="logo" src="images/logo-crop.png" width="100" height="100" alt="SewingDuckDuck" />
+      <div class="site-branding">
+        <h1>SewingDuckDuck</h1>
+      </div>
+    </header>
+    <!-- use flex to align main image and form boxes, use position to put text on top of main image -->
+    <main>
+      <div class="main-container"> 
+        <div class="container">
+          <div class="text-top">
+            <article>
+              <p>"Many of us learned to sew at a young age, either in school or at home, usually taught by the women in our family &ndash; our mothers, grandmothers or aunts. Theirs was a time when you sewed out of necessity, and knowing how to thread a needle, sew on a button or mend a small tear was routine. Fast forward a few decades to the age of fast fashion and these skills looked to be on the verge of dying out, erased by a culture of consumerism."</p>
+            </article>
+          </div>
+          <div id="main-img"><img src="images/sewing.jpeg" alt="Sewing supplies" /></div>
+        </div>
+        <div class="sign-up-form">
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Sign-Up</legend>
+              <hr />
+              <div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="emailaddress" required />
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="emailpassword" required />
+                <label for="firstname">First Name</label>
+                <input name="fname" id="firstname" type="text" maxlength="20" />
+                <label for="lastname">Last Name</label>
+                <input name="lname" id="lastname" type="text" maxlength="20" />
+              </div>
+              <div class="address bottom">
+                <label for="province">Province</label>
+                <br />
+                <select name="province" id="province">
+                  <option value="" selected>Select Province</option>
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British Columbia</option>
+                  <option value="ON">Ontario</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NL">Newfoundand and Labrador</option>
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="PE">Prince Edward Island</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                  <option value="YK">Yukon</option>
+                </select>
+              </div>
+              <div class="bottom">
+                <input type="checkbox" name="subscribe" id="subscribeMe" value="subscribe" /> 
+                <label for="subscribeMe">Subscribe Me</label>
+              </div>
+              <div class="bottom">
+                <input type="submit" class="submit" />
+              </div>
+              <div class="login bottom">
+                <p>Already have an account? <span><a href="#">Log in</a></span></p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div> 
+    </main>
+    <footer>
+        <div class="site-info content-area"> 
+          <p>&copy;2016 <a href="#" title="sewingduckduck">SewingDuckDuck</a> All rights reserved.</p>
+        </div>
+    </footer>  
+	</body>
+</html>

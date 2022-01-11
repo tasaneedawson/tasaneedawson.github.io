@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>WhatsUpDuck</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+		<link rel="stylesheet" href="css/grid.css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="images/logo.png" width="100" height="100" alt="WhatsUpDuck Shop Logo" />
+			</div>
+			<div class="menu">
+				<a href="#" class="mobile-menu-close"><i class="fas fa-times"></i></a>
+				<nav>
+					<ul>
+						<li class="menu-link"><a href="#">Home</a></li> 
+						<li id="most-pop" class="menu-link"><a href="#">Most Popular</a></li>
+						<li id="cat-sec" class="menu-link"><a href="#">Categories</a></li>
+						<li id="con-sec" class="menu-link"><a href="#">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- hamburger menu -->
+			<a href="#" id="menu-link" class="hamburger-menu"><i class="fas fa-bars"></i></a>
+		</header>
+		<!-- Hero image - add transform (1.5) -->
+		<div class="hero-img-container">
+			<div class="hero-img"><img src="images/hero-img.jpg" alt="Hero Image" /></div>
+		</div>
+		<div class="content-p">
+			<h1>Wayuu - Crochet Bags</h1><br/>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br/>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		</div>
+		<div class="sidebar">
+			<h2>Recently Posts</h2>
+			<ul>
+				<li>New Items</li>
+				<li>Best Seller</li>
+				<li>Blog</li>
+				<li>FAQ</li>
+			</ul>
+		</div>
+		<!-- Related Content -->
+		<section id="extra-con">
+			<div class="ex-container">
+				<div class="excont cont-one">
+					<h3>Crochet for Beginner</h3><hr/>
+					<p>First, figure out size and style hook. Then, start with simple yarns and beginner patterns, and you'll be a pro in no time.</p>
+				</div>
+				<div class="excont cont-two">
+					<h3>Sewing Club</h3><hr/>
+					<p>You can join our club every Saturday of the Third week. We provide pattern for you on line.</p>
+				</div>
+				<div class="excont cont-three">
+					<h3>Fabric Source</h3><hr/>
+					<p>The sources that we normally suggest to our dear customer have best quality products.</p>
+				</div>
+			</div>
+		</section>
+		<!-- Related Images -->
+		<section id="related-img">
+			<div class="img-container">
+				<div class="item-thumbnail"><img src="images/blue-bags.jpg" alt="Bags category" /></div>
+				<div class="item-thumbnail"><img src="images/blue-mask.jpg" alt="Masks category" /></div>
+				<div class="item-thumbnail"><img src="images/pillow.jpg" alt="pillows category" /></div>
+				<div class="item-thumbnail"><img src="images/pop02.jpg" alt="Most popular blue bag" /></div>
+				<div class="item-thumbnail"><img src="images/yarns-ndl.jpg" alt="Yarns and needles categoty" /></div>
+				<div class="item-thumbnail"><img src="images/pop05.jpg" alt="Most popular pillow" /></div>
+				<div class="item-thumbnail"><img src="images/dog.jpg" alt="Dog's sweater category" /></div>
+				<div class="item-thumbnail"><img src="images/pop03.jpg" alt="Most popular yellow tote" /></div>
+			</div>
+		</section>
+		<section class="related-post">
+			<h2>Related Posts</h2>
+			<ul>
+				<li>September 2020</li>
+				<li>October 2020</li>
+				<li>November 2020</li>
+			</ul>
+		</section>
+		<!-- Footer / contact info, form, TOP (nav) -->
+		<footer>
+			<div class="contact-info">
+				<p class="contactus">Contact us</p>
+				<p><a href="#" title="WhatsUpDuck.com">whatsupduck.com</a></p>
+				<p>Email: <a href="#" title="contact-email">info@whatsupduck.com</a></p>
+				<hr/>
+				<p class="rights">&copy;2020 <a href="#" title="whatsupduck">WhatsUpDuck.com</a> All rights reserved.</p>
+			</div>
+			<div id="contact">
+				<form id="form" action="#" method="post">
+					<fieldset>
+						<legend>Contact Form</legend>
+						<div class="contact-form">
+							<label for="yourname">Your Name *</label>
+							<input type="text" name="yourname" id="yourname" required />
+							<label for="email">Your Email *</label>
+							<input type="email" id="email" name="emailaddress" required />
+							<label for="yourmsg">Your Message </label>
+							<textarea id="yourmsg" name="subject" placeholder="Message" maxlength="250" ></textarea>
+							<div id="count">250</div>
+						</div>
+						<div class="button">
+							<input type="submit" class="submit" value="Submit" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="top">
+				<nav><a href="#">Top</a></nav>
+			</div>
+		</footer>
+		<!-- Javascript right before closing body tag -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>WhatsUpDuck</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="images/logo.png" width="100" height="100" alt="WhatsUpDuck Shop Logo" />
+			</div>
+			<nav class="menu">
+				<a href="#" class="mobile-menu-close"><i class="fas fa-times"></i></a>
+				<ul>
+					<li class="menu-link"><a href="#">Home</a></li> 
+					<li id="most-pop" class="menu-link"><a href="#">Most Popular</a></li>
+					<li id="cat-sec" class="menu-link"><a href="#">Categories</a></li>
+					<li id="con-sec" class="menu-link"><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+			<!-- hamburger menu -->
+			<a href="#" id="menu-link" class="mobile-menu"><i class="fas fa-bars"></i></a>
+		</header>
+		<main>
+			<div class="hero-img">
+				<img src="images/hero-img.jpg" alt="Hero Image" />
+			</div>
+			<!-- Most popular section -->
+			<section id="most-popular"> 
+				<h2>Most Popular</h2>
+				<ul class="pop-items items">
+					<li class="first-item item">
+						<div class="first-item-thumbnail"><img src="images/wayuu.jpg" alt="Most popular bags" /></div>
+						<div class="item-name">Wayuu Bag</div>
+						<div class="item-description">Hand crochet bag Columbian style 100% Acrylic.<br /> Dimension: 12.6" x 11" Strap Drop: 21.6"</div>
+						<div class="item-price">CAD 65.00</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/pop01.jpg" alt="Most popular masks" /></div>
+						<div class="item-name">Mask</div>
+						<div class="item-description">Designed with a Replaceable Filter System, these non-medical masks help people stay relaxed out in the world.</div>
+						<div class="item-price">CAD 10.00</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/pop02.jpg" alt="Most popular blue bag" /></div>
+						<div class="item-name">Crochet Bag</div>
+						<div class="item-description">Hand crochet bag with 100% cotton.<br />Dimension: 11" x 8.6" Strap Drop: 21.6"</div>
+						<div class="item-price">CAD 35.00</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/pop03.jpg" alt="Most popular yellow tote" /></div>
+						<div class="item-name">Crochet Tote</div>
+						<div class="item-description">Hand crochet tote bag with 100% cotton and leather strap.<br />Dimension: 12" x 22" x 6" Leather Strap: 16"</div>
+						<div class="item-price">CAD 45.00</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/pop05.jpg" alt="Most popular pillow" /></div>
+						<div class="item-name">Throw Pillow</div>
+						<div class="item-description">Made from Thai cotton fabric with a unique pattern.<br />Dimension: 18" x 18"</div>
+						<div class="item-price">CAD 50.00</div>
+					</li>
+				</ul>
+			</section>
+			<!-- Categories section -->
+			<section id="categories">
+				<h2>Categories</h2>
+				<ul class="category-items items">
+					<li class="second-item item">
+						<div class="item-thumbnail"><img src="images/blue-bags.jpg" alt="Bags category" /></div>
+						<div class="item-name">Bags</div>
+						<div class="item-description">We have varity products in unique style and pattern.</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/blue-mask.jpg" alt="Masks category" /></div>
+						<div class="item-name">Masks</div>
+						<div class="item-description">All masks made with care and variety of design.</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/pillow.jpg" alt="pillows category" /></div>
+						<div class="item-name">Pillows</div>
+						<div class="item-description">All our products made from the fabric that import directly from Thailand. </div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/dog.jpg" alt="Dog's sweater category" /></div>
+						<div class="item-name">Dog's Sweater</div>
+						<div class="item-description">Help keep your fur friends warm in Winter with hand crochet sweater 100% cotton.</div>
+					</li>
+					<li class="item">
+						<div class="item-thumbnail"><img src="images/yarns-ndl.jpg" alt="Yarns and needles categoty" /></div>
+						<div class="item-name">Yarns and Needles</div>
+						<div class="item-description">With high quality materials.</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<div class="contact-info">
+				<p class="contactus">Contact us</p>
+				<p><a href="#" title="WhatsUpDuck.com">whatsupduck.com</a></p>
+				<p>Email: <a href="#" title="contact-email">info@whatsupduck.com</a></p>
+				<hr/>
+				<p class="rights">&copy;2020 <a href="#" title="whatsupduck">WhatsUpDuck.com</a> All rights reserved.</p>
+			</div>
+			<div id="contact">
+				<form id="form" action="#" method="post">
+					<fieldset>
+						<legend>Contact Form</legend>
+						<div class="contact-form">
+							<label for="yourname">Your Name *</label>
+							<input type="text" name="yourname" id="yourname" required />
+							<label for="email">Your Email *</label>
+							<input type="email" id="email" name="emailaddress" required />
+							<label for="yourmsg">Your Message </label>
+							<textarea id="yourmsg" name="subject" placeholder="Message" maxlength="250" style="height:100px"></textarea>
+							<div id="count">250</div>
+						</div>
+						<div class="button">
+							<input type="submit" class="submit" value="Submit" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<div class="top">
+				<nav><a href="#">Top</a></nav>
+			</div>
+		</footer>
+		<!-- Javascript right before closing body tag -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
