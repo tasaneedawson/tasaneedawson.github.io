@@ -101,9 +101,9 @@ a {
 p {
   font-size: clamp(0.7rem, 1vw, 1.2vw);
   padding-top: 15px;
-  color: #37b4a8;
   padding-bottom: 15px;
-  line-height: 2rem;
+  color: #37b4a8;
+  line-height: 1.2rem;
 }
 
 /* .video-mograph {
@@ -503,7 +503,7 @@ span {
     /* position: relative; */
     top: 470px;
     right: 0;
-    padding: 0 0 20px 820px;
+    padding: 0 0 20px 700px;
     font-weight: 900;
   }
   .mobile-text {
