@@ -1,0 +1,13 @@
+{
+  "name": "inm420-api",
+  "version": "1.0.0",
+  "description": "Ducktionary",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Tasanee Dawson",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
